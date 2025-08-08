@@ -19,3 +19,5 @@ Database: Amazon DynamoDB
 File Storage: Amazon S3
 
 Email Service: Amazon SES (Simple Email Service)
+
+**all aws resources were deleted**
