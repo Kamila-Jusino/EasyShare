@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Share</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Flask Link -->
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/x-icon"> <!-- Flask Link -->
+</head>
+<body>
+    <header>
+        <h1>Easy Share</h1>
+        <p>A convient way to share files</p>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Upload file below</h2>
+            <form id="upload-form" method="POST" enctype="multipart/form-data" action="/upload">
+                <label for="file-input">Choose a file:</label><br />
+                <input type="file" id="file-input" name="file" required /><br /><br />
+                <p>Choose to share with up to five people!</p>
+                <input type="email" name="email1" placeholder="Email 1" required /><br />
+                <input type="email" name="email2" placeholder="Email 2" /><br />
+                <input type="email" name="email3" placeholder="Email 3" /><br />
+                <input type="email" name="email4" placeholder="Email 4" /><br />
+                <input type="email" name="email5" placeholder="Email 5" /><br /><br />
+                <button type="submit">Share</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Easy Share. All rights reserved. Developed by Kamila Jusino</p>
+    </footer>
+<!-- gives user alert that the app did it's job-->
+<!--Make more in depth later to add conditions to event handling-->
+<script>
+      document.getElementById('upload-form').addEventListener('submit', function() {
+        alert('Your file is being shared!');
+      });
+    </script>
+</body>
+</html>
