@@ -1,6 +1,6 @@
 # EasyShare
 
- a web-based file-sharing application built with Flask that enables users to easily upload and share files with multiple recipients through email.
+ a web-based file-sharing application built with Flask that enables users to easily upload and share files with multiple recipients through email. (view demo video)
 -----------------------------------------
 Overview:
 -----
