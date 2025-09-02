@@ -8,7 +8,7 @@ EasyShare provides a simple and intuitive interface for sharing files with up to
 
 Technology Stack:
 -----
-Backend: Flask (Python web framework)
+Backend: Flask 
 
 Frontend: HTML, CSS, JavaScript
 
@@ -18,6 +18,6 @@ Database: Amazon DynamoDB
 
 File Storage: Amazon S3
 
-Email Service: Amazon SES (Simple Email Service)
+Email Service: Amazon SES 
 
 **all aws resources were deleted**
